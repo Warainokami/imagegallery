@@ -9,9 +9,9 @@ let inputData = "";
 let page = 1;
 
 // ------наименование отображения первой страницы----
-inputEl.value = 'img';
+inputEl.value = 'game';
 
-if(inputEl.value === 'img') {
+if(inputEl.value === 'game') {
     searchImages();
 };
 
