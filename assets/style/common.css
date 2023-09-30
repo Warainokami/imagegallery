@@ -79,6 +79,11 @@ form {
     transition: 0.2s ease-in-out;
 }
 
+.search-result a {
+    height: 110px;
+    text-align: center;
+}
+
 .search-result:hover img {
     opacity: 0.8;
 }
