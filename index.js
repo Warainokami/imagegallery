@@ -73,8 +73,8 @@ showMore.addEventListener("click", () => {
 });
 
 document.body.addEventListener("click", function () {
-    if (event.target === input) {
-        input.value = '';
+    if (event.target === inputEl) {
+        inputEl.value = '';
     }
   });
 
