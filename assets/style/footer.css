@@ -4,11 +4,18 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: rgba(62, 29, 2, 0.9);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-top-style: solid;
+    border-color: #bbbaba;
+    padding-top: 20px;
 }
 
 .github {
-    color:  #7fc8a9;
+    color:  #070707;
     text-align: center;
     font-size: 20px;
     font-style: bold;
@@ -20,7 +27,7 @@
 }
 
 .github-txt {
-    color:  #7fc8a9;
+    color:  #000000;
     text-align: center;
     font-size: 20px;
     font-style: bold;
@@ -32,7 +39,7 @@
 }
 
 .year {
-    color:  #7fc8a9;
+    color:  #000000;
     text-align: center;
     font-size: 20px;
     font-style: bold;
