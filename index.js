@@ -8,6 +8,21 @@ const showMore = document.getElementById("show-more-button");
 let inputData = "";
 let page = 1;
 
+// ------наименование отображения первой страницы----
+inputEl.value = 'img';
+
+if(inputEl.value === 'img') {
+    searchImages();
+};
+
+// ------ курсор в поле ввода---------
+
+window.addEventListener("DOMContentLoaded", function() {
+    inputEl.focus();
+});
+
+// ------Функция отображения контента с api-------
+
 async function searchImages() {
     inputData = inputEl.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
@@ -45,6 +60,8 @@ async function searchImages() {
     }
 }
 
+// ----------Слушатели----------
+
 formEl.addEventListener("submit", (event) => {
     event.preventDefault();
     page = 1;
@@ -54,3 +71,10 @@ formEl.addEventListener("submit", (event) => {
 showMore.addEventListener("click", () => {
     searchImages();
 });
+
+document.body.addEventListener("click", function () {
+    if (event.target === input) {
+        input.value = '';
+    }
+  });
+
