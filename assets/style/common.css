@@ -59,6 +59,7 @@ form {
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
+    min-height: 100px;
     margin: 0 auto;
 }
 
@@ -73,7 +74,7 @@ form {
 
 .search-result img {
     width: 100%;
-    height: 100%;
+    height: 280px;
     object-fit: cover;
     transition: 0.2s ease-in-out;
 }
