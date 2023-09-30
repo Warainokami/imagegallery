@@ -65,7 +65,16 @@ async function searchImages() {
 formEl.addEventListener("submit", (event) => {
     event.preventDefault();
     page = 1;
-    searchImages();
+    // searchImages();
+    if(inputEl.value.length == 0){
+        inputEl.placeholder = 'Please enter your request';
+        alert('Please enter your request in the form below');
+    }
+    else{
+        searchImages();
+        inputEl.placeholder = 'Search...';
+        }
+    
 })
 
 showMore.addEventListener("click", () => {
